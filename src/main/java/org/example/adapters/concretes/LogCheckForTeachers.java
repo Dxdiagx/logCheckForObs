@@ -3,7 +3,7 @@ package org.example.adapters.concretes;
 import org.example.entities.Teachers;
 import org.example.adapters.abstracts.LogCheckTeachersDao;
 
-public class LogCheckForTeachers implements LogCheckTeachersDao {
+public class LogCheckForTeachers implements LogCheckTeachersDao{
     String tC;
     String pass;
 

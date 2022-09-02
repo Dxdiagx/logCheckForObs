@@ -1,7 +1,7 @@
 package org.example.adapters.concretes;
 
-import org.example.entities.Students;
 import org.example.adapters.abstracts.LogCheckStudentsDao;
+import org.example.entities.Students;
 
 public class LogCheckForStudents implements LogCheckStudentsDao {
 
