@@ -1,6 +1,8 @@
 package org.example;
 
+import org.example.adapters.abstracts.LogCheckStudentsDao;
 import org.example.adapters.abstracts.LogCheckTeachersDao;
+import org.example.adapters.concretes.LogCheckForStudents;
 import org.example.adapters.concretes.LogCheckForTeachers;
 import org.example.entities.Students;
 import org.example.entities.Teachers;
@@ -27,5 +29,8 @@ public class Main {
 
         LogCheckTeachersDao logCheckTeachersDao=new LogCheckForTeachers(teachers1.tC, teachers1.pass);
         logCheckTeachersDao.loginCheck(teachers1);
+
+        LogCheckStudentsDao logCheckStudentsDao=new LogCheckForStudents(students1.schoolNo,students1.pass);
+        logCheckStudentsDao.loginCheck(students1);
     }
 }
