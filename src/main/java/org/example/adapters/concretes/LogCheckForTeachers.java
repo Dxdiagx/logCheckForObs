@@ -1,4 +1,4 @@
-package org.example.adapters.concrete;
+package org.example.adapters.concretes;
 
 import org.example.entities.Teachers;
 import org.example.adapters.abstracts.LogCheckTeachersDao;

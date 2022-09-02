@@ -1,7 +1,7 @@
 package org.example;
 
 import org.example.adapters.abstracts.LogCheckTeachersDao;
-import org.example.adapters.concrete.LogCheckForTeachers;
+import org.example.adapters.concretes.LogCheckForTeachers;
 import org.example.entities.Students;
 import org.example.entities.Teachers;
 
