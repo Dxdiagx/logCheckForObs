@@ -18,6 +18,8 @@ public class LogCheckForTeachers implements LogCheckTeachersDao {
         if (this.tC.equals(teachers.tC) && this.pass.equals(teachers.pass)){
             System.out.println("Giriş Başarılı.. Sayın "+teachers.firstName);
         }
-        
+        else{
+            System.out.println("Giriş Başarısız");
+        }
     }
 }
