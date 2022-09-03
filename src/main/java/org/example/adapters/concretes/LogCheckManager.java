@@ -1,10 +1,10 @@
 package org.example.adapters.concretes;
 
-import org.example.adapters.abstracts.LoggerDao;
+import org.example.adapters.abstracts.LogCheckService;
 import org.example.entities.Students;
 import org.example.entities.Teachers;
 
-public class LogCheckManager implements LoggerDao {
+public class LogCheckManager implements LogCheckService {
 
     private Students students;
     private Teachers teachers;
