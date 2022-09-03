@@ -1,4 +1,4 @@
-package org.example.entities;
+package org.example.entities.concretes;
 import java.util.Date;
 
 public  class Users {

@@ -1,8 +1,8 @@
 package org.example.adapters.concretes;
 
 import org.example.adapters.abstracts.LogCheckService;
-import org.example.entities.Students;
-import org.example.entities.Teachers;
+import org.example.entities.concretes.Students;
+import org.example.entities.concretes.Teachers;
 
 public class LogCheckManager implements LogCheckService {
 
@@ -19,7 +19,7 @@ public class LogCheckManager implements LogCheckService {
     public LogCheckManager(Teachers teachers) {
         this.teachers = teachers;
         this.teachers.tC = teachers.tC;
-
+        this.teachers.pass = teachers.pass;
     }
 
     

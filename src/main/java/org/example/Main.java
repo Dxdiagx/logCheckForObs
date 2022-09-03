@@ -1,7 +1,8 @@
 package org.example;
+import org.example.adapters.abstracts.LogCheckService;
 import org.example.adapters.concretes.LogCheckManager;
-import org.example.entities.Students;
-import org.example.entities.Teachers;
+import org.example.entities.concretes.Students;
+import org.example.entities.concretes.Teachers;
 
 public class Main {
     public static void main(String[] args) {
@@ -23,9 +24,10 @@ public class Main {
         teachers2.pass="1234567";
         teachers2.firstName="Taner";
 
-        LogCheckManager logCheckManager=new LogCheckManager(students1);
-        logCheckManager.loginCheck(students1);
-        LogCheckManager logCheckManager2=new LogCheckManager(teachers1);
-        logCheckManager2.loginCheck(teachers2);
+        LogCheckService logCheckService=new LogCheckManager(students1);
+        logCheckService.loginCheck(students1);
+        LogCheckService logCheckService2=new LogCheckManager(teachers1);
+        logCheckService2.loginCheck(teachers1);
+
     }
 }
