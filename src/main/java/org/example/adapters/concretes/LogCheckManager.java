@@ -6,15 +6,15 @@ import org.example.entities.Teachers;
 
 public class LogCheckManager implements LoggerDao {
 
-
+    private Students students;
+    private Teachers teachers;
     public LogCheckManager(Students students) {
         this.students = students;
         this.students.pass = students.pass;
         this.students.schoolNo=students.schoolNo;
     }
 
-    private Students students;
-    private Teachers teachers;
+
 
     public LogCheckManager(Teachers teachers) {
         this.teachers = teachers;
