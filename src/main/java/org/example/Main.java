@@ -25,5 +25,7 @@ public class Main {
 
         LogCheckManager logCheckManager=new LogCheckManager(students1);
         logCheckManager.loginCheck(students1);
+        LogCheckManager logCheckManager2=new LogCheckManager(teachers1);
+        logCheckManager2.loginCheck(teachers2);
     }
 }
